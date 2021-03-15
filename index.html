@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>uniMail</title>
+</head>
+<body>
+
+	<form>
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="Phone" value="Phone">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="Name"  value="name" onfocus="this.value = ' ';"
+		onblur="if (this.value == '') {this.value = 'Name';}">
+		<input type="text" name="E-mail" value="email" onfocus="this.value = ' ';"
+		onblur="if (this.value == '') {this.value = 'Email';}">
+		<input name="Phone" onfocus="this.value = ' ';"
+		onblur="if (this.value == '') {this.value = 'Phone';}">
+		<input type="text" name="form_subject" onfocus="this.value = ' ';"
+		onblur="if (this.value == '') {this.value = 'form_subject';}">
+		<button>Send</button>
+
+	</form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
